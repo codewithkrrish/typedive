@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "typedive"
+version = "1.0.0"
+description = "Falling-word typing game for your terminal"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Krrish"}]
+
+[project.scripts]
+typedive = "typedive.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["typedive*"]
